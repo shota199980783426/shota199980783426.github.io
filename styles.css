@@ -22,13 +22,18 @@ header {
     color: white;
     padding: 10px 0;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 2rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
 }
 
 header nav ul li {
     display: inline-block;
     margin-right: 20px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 header nav ul li:last-child {
@@ -42,32 +47,37 @@ header nav ul li a {
 
 main {
     display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-footer {
-    background-color: #e8b96c;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-/* 商品カタログとカートのスタイル */
-#catalog {
-    flex: 2;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .product {
     width: 200px;
-    margin: 20px 0;
+    margin: 20px;
     padding: 10px;
     border: 1px solid #ccc;
     text-align: center;
 }
+
+#cart {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+#cart h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart-items li {
+    margin-bottom: 10px;
+}
+
+#total
